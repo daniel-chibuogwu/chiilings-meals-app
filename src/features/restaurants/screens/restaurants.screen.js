@@ -9,14 +9,13 @@ const SafeArea = styled(SafeAreaView)`
   ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
 `;
 const RestaurantSearchbar = styled(Searchbar)`
-  margin-horizontal: 8px;
-  margin-vertical: 16px;
-  border-radius: 3px;
+  margin: ${(props) => props.theme.space[3]};
+  border-radius: ${(props) => props.theme.space[1]};
   height: 46px;
 `;
 const RestaurantListContainer = styled.View`
   flex: 1;
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 export const RestaurantsScreen = () => {
